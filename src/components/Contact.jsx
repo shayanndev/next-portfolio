@@ -1,5 +1,4 @@
-// components/Contact.jsx
-import Button from './Button';
+import Image from 'next/image';
 
 export default function Contact() {
   return (
@@ -8,9 +7,11 @@ export default function Contact() {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8">
 
         <div className="flex-1 max-w-sm md:max-w-md">
-          <img
+          <Image
             src="/images/location.png"
             alt="Contact Image"
+            width={100}
+            height={100}
           />
         </div>
 

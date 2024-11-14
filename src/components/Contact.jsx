@@ -10,13 +10,14 @@ export default function Contact() {
           <Image
             src="/images/location.png"
             alt="Contact Image"
-            width={100}
-            height={100}
+            width={500}
+            height={500}
+            className="w-full h-auto object-contain max-w-md mx-auto"
           />
         </div>
 
         <div className="flex-1 max-w-md w-full">
-          <form className="w-full">
+          <form className="w-full p-8 rounded-lg">
             <input
               type="text"
               placeholder="Name"
@@ -31,10 +32,16 @@ export default function Contact() {
               placeholder="Message"
               className="w-full p-3 rounded-lg mb-4 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             />
-            <a className="w-100 px-6 py-4 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-500 transition duration-300 cursor-pointer">Send Message</a>
+            <button
+              type="submit"
+              className="w-full px-6 py-3 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-500 transition duration-300"
+            >
+              Send Message
+            </button>
           </form>
         </div>
       </div>
     </section>
+
   );
 }
